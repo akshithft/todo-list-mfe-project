@@ -41,6 +41,8 @@ To integrate this MFE into a host application, ensure that the host provides Rea
   window.todoMFE.mount(document.getElementById('yourAppContainerId'), { /* optional props */ });
 </script>
 ```
+Replace `"path_to_your_mfe/todoMFE.js"` with the actual path to the bundled MFE script, and `"yourAppContainerId"` with the ID of the DOM element where the Todo app should mount.
+
 For Example
 ```
 <!DOCTYPE html>
@@ -76,6 +78,3 @@ For Example
   </body>
 </html>
 ```
-
-
-Replace `"path_to_your_mfe/todoMFE.js"` with the actual path to the bundled MFE script, and `"yourAppContainerId"` with the ID of the DOM element where the Todo app should mount.
