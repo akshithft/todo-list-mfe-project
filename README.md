@@ -5,8 +5,8 @@ This project demonstrates a Microfrontend (MFE) for a simple Todo application. I
 
 ## Setup Instructions
 ### Prerequisites
--Node.js installed (version 12 or higher recommended)
--npm or yarn installed
++Node.js installed (version 12 or higher recommended)
++npm or yarn installed
 
 ### Installation
 1. Clone the Repository
@@ -25,7 +25,7 @@ npm install
 npm run build
 ```
 
-6. Run Locally
+5. Run Locally
 -Serve the `dist` directory using a static server.
 ```
 npm install -g serve
