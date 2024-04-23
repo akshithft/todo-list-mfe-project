@@ -10,8 +10,10 @@ This project demonstrates a Microfrontend (MFE) for a simple Todo application. I
 
 ### Installation
 1. Clone the Repository
-```git clone https://github.com/akshithft/todo-list-mfe-project.git
-cd todo-mfe```
+```
+git clone https://github.com/akshithft/todo-list-mfe-project.git
+cd todo-mfe
+```
 
 2. Install Dependencies
 ```npm install```
