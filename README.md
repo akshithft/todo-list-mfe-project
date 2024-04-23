@@ -78,3 +78,27 @@ For Example
   </body>
 </html>
 ```
+
+## Architectural Choices
+### React
+Chosen for its component-based architecture, which suits the microfrontend paradigm well. React's ecosystem and community provide robust support for building scalable and maintainable applications.
+
+### TypeScript
+Adds type safety to the project, enhancing development experience with static type checking, which can prevent many potential runtime errors.
+
+### Webpack
+Used for bundling the application. Configured to output a UMD (Universal Module Definition) build, making the MFE compatible with various module systems, thus increasing its flexibility in different host environments.
+
+### External Dependencies
+React and ReactDOM are set as externals in the Webpack configuration to prevent them from being bundled into the MFE. This setup assumes that the host application will provide these libraries globally, reducing the overall size of the MFE and avoiding version conflicts.
+
+## Design Choices
+### Modularity
+The application is designed to be modular, with clear boundaries between the UI components and the state management logic. This separation of concerns facilitates easier maintenance and scalability.
+
+### Isolation
+The MFE operates independently of the host application's state management. It uses its own local storage mechanism to persist todo items, ensuring that it does not interfere with the host application's state.
+
+### Custom Hooks
+Use of custom hooks like `useTodos` encapsulates the business logic, keeping the components clean and focused on rendering UI.
+
