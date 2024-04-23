@@ -1,0 +1,13 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.todo-input,
+.todo-button {
+  margin: 5px;
+}
+.todo-button {
+  cursor: pointer;
+}
